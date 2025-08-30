@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./ChatGPT Image Aug 30, 2025, 06_51_15 PM.png">
+</head>
+<body>
+    <h1>AI Thumbnail Generator</h1>
+
+    <div id="paywall">
+        <h2>Unlock Thumbnail Creation</h2>
+        <p>Choose a plan to generate your awesome thumbnails!</p>
+        <div class="plan">
+            <h3>One-Time</h3>
+            <p>₹100 for one thumbnail set</p>
+            <a href="#index3.html">
+            <button onclick="handlePayment('one-time', 100)">Buy Now</button> 
+            </a>
+        </div>
+        <div class="plan">
+            <h3>Monthly</h3>
+            <p>₹1000 for unlimited monthly thumbnails</p>
+            <button onclick="handlePayment('monthly', 1000)">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h3>Yearly</h3>
+            <p>₹10000 for unlimited yearly thumbnails</p>
+            <button onclick="handlePayment('yearly', 10000)">Subscribe</button>
+        </div>
+
+         <!-- New Code Entry Option -->
+        <div class="plan">
+            <h3>I have a code</h3>
+            <p>Redeem your special code here</p>
+            <input type="password" id="redeemCode" placeholder="Enter code">
+            <button onclick="handlePayment()">Apply Code</button>
+        </div>
+    </div> 
+
+    <form id="thumbnailForm" >
+        <label for="photo">Upload Your Radical Photo:</label>
+        <input type="file" id="photo" accept="image/*" required>
+        
+        <label for="videoType">Video Type (e.g., tutorial, vlog):</label>
+        <input type="text" id="videoType" required>
+        
+        <label for="style">Style (e.g., neon, retro-futuristic):</label>
+        <input type="text" id="style" value="retro" required>
+        
+        <label for="mood">Mood (e.g., vibey, chill):</label>
+        <input type="text" id="mood" required>
+        
+        <label for="placement">Photo Placement:</label>
+        <select id="placement" required>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="center">Center</option>
+        </select>
+
+        <label for="inspiration">Inspired by YouTuber (optional):</label>
+        <input type="text" id="inspiration" placeholder="e.g., MrBeast, CarryMinati, Hitesh Choudhary">
+        
+        <button type="button" onclick="generateThumbnails()">Generate Thumbnails</button>
+    </form>
+    
+    <div id="results"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #c65ae1, #4ecdc4);
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffeb3b;
+    text-shadow: 3px 3px #333;
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px #333;
+}
+form {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 3px solid #ffeb3b;
+}
+label {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+    color: #ffeb3b;
+    text-shadow: 1px 1px #000;
+}
+input[type="password"], select {
+    padding: 10px;
+    border: 2px solid #ff6b6b;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="password"]:focus, select:focus {
+    border-color: #4ecdc4;
+}
+input[type="file"] {
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border: 2px solid #ff6b6b;
+    border-radius: 5px;
+}
+button {
+    font-family: 'Press Start 2P', cursive;
+    background: #ffeb3b;
+    color: #333;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s, background 0.3s;
+}
+button:hover {
+    background: #4ecdc4;
+    transform: scale(1.05);
+}
+#results {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.thumbnail-container {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffeb3b;
+    text-align: center;
+}
+.thumbnail-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid #4ecdc4;
+}
+.thumbnail-container a, .thumbnail-container button {
+    margin: 5px;
+    font-size: 0.8em;
+    padding: 8px;
+    background: #ff6b6b;
+    color: #fff;
+}
+.thumbnail-container a:hover, .thumbnail-container button:hover {
+    background: #4ecdc4;
+}
+#zipButton {
+    display: block;
+    margin: 20px auto;
+    font-family: 'Press Start 2P', cursive;
+    background: #ffeb3b;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+#zipButton:hover {
+    background: #4ecdc4;
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    h1 { font-size: 1.8em; }
+    form { padding: 15px; }
+    #results { grid-template-columns: 1fr; }
+}
+
+ body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #c65ae1, #4ecdc4);
+            color: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: #ffeb3b;
+            text-shadow: 4px 3px #333;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px #333;
+        }
+        form {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 3px solid #ffeb3b;
+        }
+        label {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.9em;
+            color: #ffeb3b;
+            text-shadow: 1px 1px #000;
+        }
+        input[type="text"], select {
+            padding: 10px;
+            border: 2px solid #ff6b6b;
+            border-radius: 5px;
+            background: #222;
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus, select:focus {
+            border-color: #4ecdc4;
+        }
+        input[type="file"] {
+            padding: 10px;
+            background: #222;
+            color: #fff;
+            border: 2px solid #ff6b6b;
+            border-radius: 5px;
+        }
+        button {
+            font-family: 'Press Start 2P', cursive;
+            background: #ffeb3b;
+            color: #333;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.2s, background 0.3s;
+        }
+        button:hover {
+            background: #4ecdc4;
+            transform: scale(1.05);
+        }
+        #results {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .thumbnail-container {
+            background: #333;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #ffeb3b;
+            text-align: center;
+        }
+        .thumbnail-container img {
+            max-width: 100%;
+            border-radius: 5px;
+            border: 2px solid #4ecdc4;
+        }
+        .thumbnail-container a, .thumbnail-container button {
+            margin: 5px;
+            font-size: 0.8em;
+            padding: 8px;
+            background: #ff6b6b;
+            color: #fff;
+        }
+        .thumbnail-container a:hover, .thumbnail-container button:hover {
+            background: #4ecdc4;
+        }
+        #zipButton {
+            display: block;
+            margin: 20px auto;
+            font-family: 'Press Start 2P', cursive;
+            background: #ffeb3b;
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        #zipButton:hover {
+            background: #4ecdc4;
+            transform: scale(1.05);
+        }
+        #paywall {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            border: 3px solid #ff6b6b;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #paywall h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: #ffeb3b;
+            text-shadow: 2px 2px #333;
+            margin-bottom: 15px;
+        }
+        .plan {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            background: #333;
+            border: 2px solid #4ecdc4;
+            border-radius: 5px;
+        }
+        .plan h3 {
+            font-family: 'Press Start 2P', cursive;
+            color: #ffeb3b;
+            margin-bottom: 10px;
+        }
+        .plan p {
+            margin: 5px 0;
+        }
+        .plan button {
+            background: #ff6b6b;
+            margin-top: 10px;
+        }
+        .plan button:hover {
+            background: #4ecdc4;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            form, #paywall { padding: 15px; }
+            #results { grid-template-columns: 1fr; }
+            .plan { display: block; margin: 10px 0; }
+        }
