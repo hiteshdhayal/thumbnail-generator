@@ -1,6 +1,4 @@
 // API Keys (Replace OpenAI key with your own; Google key provided)
-        const OPENAI_API_KEY = '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'; 
-        const GOOGLE_API_KEY = 'AIzaSyDk2eD6bxz237jXcWqY2LmOKCAyQRptXEE';
 
         let isSubscribed = false;
 
