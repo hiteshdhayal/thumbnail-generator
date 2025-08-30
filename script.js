@@ -1,6 +1,5 @@
 // API Keys (Replace OpenAI key with your own; Google key provided)
-const OPENAI_API_KEY = 'sk-your-openai-api-key-here'; // Placeholder: Get from https://platform.openai.com/account/api-keys
-const GOOGLE_API_KEY = 'AIzaSyD14HwzXOE3_FHKIKaTe2m2kb592hVhps0';
+
 
 async function generateThumbnails() {
     const photoFile = document.getElementById('photo').files[0];
